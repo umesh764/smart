@@ -1,4 +1,11 @@
-import streamlit as st
+import streamlit as st  # Import streamlit
+
+# Image ka URL
+image_url = "https://github.com/umesh764/smart/blob/main/shree%20ganesh.jpeg?raw=true"  # Raw link
+
+# Image ko Streamlit mein display karein
+st.image("https://github.com/umesh764/smart/blob/main/shree%20ganesh.jpeg?raw=true")  # Streamlit will show the image
+
 from datetime import datetime
 from PIL import Image  # Importing required modules for image handling
 
@@ -88,7 +95,7 @@ def app():
     # Display Image
     image_path = "https://github.com/umesh764/MY-JOTISH-APP/blob/main/shree%20ganesh.jpeg"  # Ensure this path is correct
     img = Image.open(image_path)
-    st.image(img, caption="Shree Ganesh", width=150)
+    st.image(image_url) (img, caption="Shree Ganesh", width=150)
     
     # Title
     st.title("Jyotish Bhavishya Software")
